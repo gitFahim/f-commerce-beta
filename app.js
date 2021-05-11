@@ -23,4 +23,4 @@ app.get('/blog', (req, res) => {
     res.render('blog');
 });
 
-app.listen(5000, () => console.info('Listening on port 5000'));
+app.listen(process.env.PORT || 5000);
